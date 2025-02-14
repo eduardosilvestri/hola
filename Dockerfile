@@ -5,7 +5,7 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 COPY . /var/www/html/practica-calculadora
 # Establece los permisos adecuados para el directorio de la aplicación
 RUN chown -R www-data:www-data /var/www/html
-RUN chmod -R 755 /var/www/html
+RUN chmod -R 755 /var/www/html/practica-calculadora
 # Expone el puerto 80 para que Apache pueda recibir tráfico web
 EXPOSE 80
 # Comando para mantener el contenedor en ejecución mientras Apache funcione
